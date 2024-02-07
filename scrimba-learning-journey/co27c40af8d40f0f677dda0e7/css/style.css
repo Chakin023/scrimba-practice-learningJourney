@@ -1,0 +1,206 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+/* header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.25rem 1rem;
+    border-bottom: 0.25rem dashed #088F8F;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.85em 0;
+    display: block;
+}
+
+a:hover,
+a:focus {
+    color: blue;
+    text-decoration: underline;
+}
+
+nav li {
+    margin-left: 2rem;
+}
+
+/* content-container */
+
+.icon {
+    height: 4vmin;
+}
+
+.content {
+    padding-top: 10%;
+}
+
+.content-text {
+    background-color: whitesmoke;
+    padding: 0.25rem 0.5rem;
+}
+
+.content-container {
+    background-image: url("images/M-Desk.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 2rem 1.5rem 0.5rem ;
+}
+
+/* blog */
+
+.blog {
+    margin-top: 2rem;
+}
+
+.blog-img {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 15%;
+}
+
+
+.blog:last-child {
+    margin-bottom: 3rem;
+}
+
+.blog-num {
+    font-weight: bold;
+}
+
+/* typography */
+
+h1,
+a,
+button {
+    font-size: 3vmin;
+}
+
+h2 {
+    margin-top: 1rem;
+    font-size: 2.5vmin;
+    font-weight: light;
+}
+
+h3 {
+    font-size: 2vmin;
+}
+
+h4 {
+    font-size: 1.5vmin;
+}
+
+/* viewmore */
+
+#view-btn {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background: none;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+/* footer */
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    background: #088F8F;
+    padding: 1rem;
+    line-height: 0.25rem;
+}
+
+@media (min-width: 769px) {
+    .blog-container {
+        display: grid;
+        grid-template: 1fr / 1fr 1fr 1fr;
+    }
+    
+    .content {
+        padding-top: 10rem;
+    }
+    
+    .content-text,
+    .intro,
+    .main-content,
+    .profile {
+        margin: 0 auto;
+        max-width: 85%;
+    }
+    
+    .blog-container {
+        margin: 0 auto;
+        max-width: 95%;
+    }
+    
+    #profile-img {
+        width: auto;
+        height: auto;
+    }
+}
+
+
+/* home.html */
+
+.intro,
+.main-content,
+.home-img,
+.blog-container,
+.blog-content,
+.profile {
+    padding: 0 2rem;
+}
+
+.home-img {
+    margin: 1rem 0;
+    width: 100%;
+    border-radius: 5%
+}
+
+#recent-post {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+/* aboutMe.html */
+
+.profile {
+    display: flex;
+    gap: 5vw;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #eeeeee;
+    border: 2px dashed #088F8F;
+}
+
+#profile-img {
+    border-radius: 50%;
+    min-width: 10%;
+    min-height: 10%;
+}
+
+.profile-desc {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
